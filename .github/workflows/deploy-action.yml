@@ -21,7 +21,7 @@ jobs:
         run: |
           npm ci
           npm run build
-#          touch out/.nojekyll
+#          touch build/.nojekyll
 #          echo "konstanzakapsali.com" >> out/CNAME
       #          npm run sitemap
 
@@ -31,4 +31,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: out # The folder the action should deploy.
+          folder: build # The folder the action should deploy.
