@@ -21,7 +21,7 @@ jobs:
         run: |
           npm ci
           npm run build
-          touch out/.nojekyll
+#          touch out/.nojekyll
 #          echo "konstanzakapsali.com" >> out/CNAME
       #          npm run sitemap
 
