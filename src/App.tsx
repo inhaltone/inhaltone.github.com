@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import TerminalText from "./components/TerminalText";
 
 function App() {
     return (
@@ -14,7 +15,7 @@ function App() {
                     </svg>
                 </div>
                 <div className="caption">
-                    @inhaltone
+                    <TerminalText text="@inhaltone"/>
                 </div>
             </div>
         </div>
