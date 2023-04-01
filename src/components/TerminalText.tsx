@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React from "react";
 
 export default class TerminalText extends React.Component<any, any> {
     list: string[];
