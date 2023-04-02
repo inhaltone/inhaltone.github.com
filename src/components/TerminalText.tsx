@@ -1,4 +1,5 @@
 import React from "react";
+import TerminalCursor from "./TerminalCursor";
 
 export default class TerminalText extends React.Component<any, any> {
     list: string[];
@@ -40,7 +41,8 @@ export default class TerminalText extends React.Component<any, any> {
     render() {
         return (
             <div>
-                {this.state.text}
+                <span>{this.state.text}</span>
+                <TerminalCursor/>
             </div>
         );
     }
