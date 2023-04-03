@@ -1,46 +1,65 @@
 import React from "react";
 import TerminalCursor from "./TerminalCursor";
 
-export default class TerminalText extends React.Component<any, any> {
-    list: string[];
-    speed: number = 100;
+enum StatusEnum {
+    PENDING = 'pending',
+    COMPLETED = 'completed'
+}
 
-    constructor(props: any) {
+interface PropsInterface {
+    text: string
+}
+
+interface TerminalTextInterface {
+    text: string;
+    status: StatusEnum
+}
+
+export default class TerminalText extends React.Component<PropsInterface, TerminalTextInterface> {
+    charList: string[];
+    speed: number = 20;
+
+    constructor(props: PropsInterface) {
         super(props);
-        this.state = {text: ''};
-        this.list = [];
+        this.state = {text: '', status: StatusEnum.PENDING};
+        this.charList = [];
     }
 
-    componentDidMount() {
-        this.main();
+    async componentDidMount() {
+        const status = await this.animate();
+        this.updateStatus(status);
     }
 
-    promise(i: number): Promise<string> {
+    async animate(): Promise<StatusEnum> {
+        for (const char of this.props.text) {
+            await this.delay();
+            this.charList.push(char);
+            this.updateText(this.charList.join(""));
+        }
+        return Promise.resolve(StatusEnum.COMPLETED);
+    }
+
+    delay(): Promise<void> {
         return new Promise((resolve) => {
-            setTimeout(() => resolve('poutsa'), this.speed * i)
+            setTimeout(() => resolve(), this.speed)
         })
     }
 
-    main() {
-        // @ts-ignore
-        Array.from(this.props.text).forEach(async (char: string, index) => {
-            await this.promise(index);
-            this.list.push(char);
-            console.log(this.list, index);
-            this.updateState(this.list.join(""));
-        });
-    }
-
-    updateState(list: string) {
+    updateText(charList: string) {
         this.setState(() => ({
-            text: list
+            text: charList
         }));
     }
 
+    updateStatus(status: StatusEnum) {
+        this.setState(() => ({
+            status: status
+        }));
+    }
 
     render() {
         return (
-            <div>
+            <div className="caption">
                 <span>{this.state.text}</span>
                 <TerminalCursor/>
             </div>

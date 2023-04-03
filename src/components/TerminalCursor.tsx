@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../css-modules/transition.module.css";
+import styles from "../css/transition.module.css";
 
 export default class TerminalCursor extends React.Component<any, any> {
     public cursor: boolean;
