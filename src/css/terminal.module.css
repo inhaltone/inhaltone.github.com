@@ -1,0 +1,56 @@
+:root {
+    --terminal-radius: 10px;
+    --terminal-border-color: #6c6c6c;
+    --terminal-tools-border-color: #424242;
+    --terminal-background-color: rgba(17, 17, 17, 0.89);
+    --terminal-tools-background-color: rgb(31, 31, 31);
+    --orange: #E95420;
+}
+
+.terminal {
+    position: fixed;
+    border: 1px solid var(--terminal-border-color);
+    border-radius: var(--terminal-radius);
+    background-color: var(--terminal-background-color);
+    width: 460px;
+    height: 340px;
+    filter: drop-shadow(0px 12px 20px rgba(0, 0, 0, 0.48));
+}
+
+.toolbox {
+    height: 36px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-top-right-radius: var(--terminal-radius);
+    border-top-left-radius: var(--terminal-radius);
+    background-color: var(--terminal-tools-background-color);
+    border-bottom: 1px solid var(--terminal-tools-border-color);
+}
+
+.toolbox:hover {
+    cursor: move;
+}
+
+.toolboxButtons {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.closeButton {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.closeButton:hover {
+    filter: invert(1);
+}
+.closeButton svg {
+    fill: var(--orange);
+}
