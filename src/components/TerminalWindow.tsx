@@ -1,6 +1,7 @@
 import React from "react";
 import style from '../css/terminal.module.css';
 import IconClose from "./icons/IconClose";
+import TerminalText from "./TerminalText";
 
 export default class TerminalWindow extends React.Component<any, any> {
     public previousPosX: number;
@@ -21,7 +22,7 @@ export default class TerminalWindow extends React.Component<any, any> {
     }
 
     componentDidMount() {
-        console.log(this.previousPosX);
+        setTimeout(() => this.terminalWindow.current?.classList.add('slide-in-blurred-bottom'), 1000);
     }
 
     drag(event: React.MouseEvent<HTMLElement>) {
@@ -45,6 +46,7 @@ export default class TerminalWindow extends React.Component<any, any> {
     }
 
     close() {
+        this.terminalWindow.current?.classList.remove('slide-in-blurred-bottom');
         this.terminalWindow.current?.classList.add('slide-out-blurred-bottom');
     }
 
@@ -57,6 +59,10 @@ export default class TerminalWindow extends React.Component<any, any> {
                         <button onClick={() => this.close()} type="button" className={style.closeButton}><IconClose/>
                         </button>
                     </div>
+                </div>
+                <div className={style.terminalText}>
+                    <TerminalText
+                        text={"@inhaltone"}/>
                 </div>
             </div>
         )

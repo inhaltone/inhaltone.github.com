@@ -15,6 +15,11 @@
     width: 460px;
     height: 340px;
     filter: drop-shadow(0px 12px 20px rgba(0, 0, 0, 0.48));
+    visibility: hidden;
+}
+
+.terminalText {
+    padding: 30px 15px;
 }
 
 .toolbox {
