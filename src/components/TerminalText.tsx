@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import TerminalCursor from "./TerminalCursor";
 
 enum AnimationStatusEnum {
@@ -11,31 +11,30 @@ interface PropsInterface {
     text: string
 }
 
-export default function TerminalText(props: PropsInterface) {
+export default function TerminalText({text}: PropsInterface) {
     const charList: string[] = [];
     const speed: number = 20;
     const [animationTextState, setAnimationTextState] = useState('');
     const [animationStatusState, setAnimationStatusState] = useState(AnimationStatusEnum.READY);
 
-    useEffect(() => {
-        async function doAnimation() {
-            const status = await animate();
-            // if (status === AnimationStatusEnum.READY) {
-            console.log('telos to animation', status);
-            // updateStatus(status);
-            // }
-        }
+    const doAnimation = useCallback(animate, [animate]);
 
-        doAnimation();
-        updateStatus(AnimationStatusEnum.PENDING);
-    }, [animationStatusState]);
+    useEffect(() => {
+        if (animationStatusState === AnimationStatusEnum.READY) {
+            doAnimation().then((status) => {
+                console.log('RESPONSE=> ', status);
+            });
+        }
+    }, [animationStatusState, doAnimation])
 
     async function animate(): Promise<AnimationStatusEnum> {
-        for (const char of props.text) {
+        setAnimationStatusState(AnimationStatusEnum.PENDING);
+        for (const char of text) {
             await delay();
             charList.push(char);
-            updateText(charList.join(""));
+            setAnimationTextState(charList.join(''));
         }
+        setAnimationStatusState(AnimationStatusEnum.COMPLETED);
         return Promise.resolve(AnimationStatusEnum.COMPLETED);
     }
 
@@ -43,14 +42,6 @@ export default function TerminalText(props: PropsInterface) {
         return new Promise((resolve) => {
             setTimeout(() => resolve(), speed)
         })
-    }
-
-    function updateText(charList: string) {
-        setAnimationTextState(charList);
-    }
-
-    function updateStatus(status: AnimationStatusEnum) {
-        setAnimationStatusState(status);
     }
 
     return (

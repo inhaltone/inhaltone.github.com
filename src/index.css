@@ -1,13 +1,13 @@
 body {
-  margin: 0;
-  font-family: 'JetBrainsMono', monospace;
-  background-color: #1a1b1e;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: 'JetBrainsMono', monospace;
+    background-color: #1a1b1e;
+    color: white;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: 'JetBrainsMono', monospace;
 }

@@ -1,3 +1,10 @@
+:root {
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+}
+
 @font-face {
     font-family: 'JetBrainsMono';
     src: url('./fonts/JetBrainsMono-Regular.woff2') format('woff2');
@@ -8,8 +15,24 @@
 
 @font-face {
     font-family: 'JetBrainsMono';
-    src: url('./fonts/JetBrainsMono-Regular.woff2') format('woff2');
+    src: url('./fonts/JetBrainsMono-Medium.woff2') format('woff2');
     font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('./fonts/JetBrainsMono-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('./fonts/JetBrainsMono-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
@@ -28,13 +51,18 @@
     animation: rotation-infinite 4s linear infinite both;
 }
 
+.logo:hover svg {
+    fill: var(--orange);
+}
+
 .caption {
     padding: 0;
-    font-weight: 400;
     width: 100%;
     text-align: left;
     line-break: strict;
     white-space: pre-line;
+    font-weight: var(--font-medium);
+    font-size: 1em;
 }
 
 @keyframes rotation-infinite {
