@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import TerminalCursor from "./TerminalCursor";
 
-enum StatusEnum {
+enum AnimationStatusEnum {
+    READY = 'ready',
     PENDING = 'pending',
     COMPLETED = 'completed'
 }
@@ -10,59 +11,52 @@ interface PropsInterface {
     text: string
 }
 
-interface TerminalTextInterface {
-    text: string;
-    status: StatusEnum
-}
+export default function TerminalText(props: PropsInterface) {
+    const charList: string[] = [];
+    const speed: number = 20;
+    const [animationTextState, setAnimationTextState] = useState('');
+    const [animationStatusState, setAnimationStatusState] = useState(AnimationStatusEnum.READY);
 
-export default class TerminalText extends React.Component<PropsInterface, TerminalTextInterface> {
-    charList: string[];
-    speed: number = 20;
-
-    constructor(props: PropsInterface) {
-        super(props);
-        this.state = {text: '', status: StatusEnum.PENDING};
-        this.charList = [];
-    }
-
-    async componentDidMount() {
-        const status = await this.animate();
-        this.updateStatus(status);
-    }
-
-    async animate(): Promise<StatusEnum> {
-        for (const char of this.props.text) {
-            await this.delay();
-            this.charList.push(char);
-            this.updateText(this.charList.join(""));
+    useEffect(() => {
+        async function doAnimation() {
+            const status = await animate();
+            // if (status === AnimationStatusEnum.READY) {
+            console.log('telos to animation', status);
+            // updateStatus(status);
+            // }
         }
-        return Promise.resolve(StatusEnum.COMPLETED);
+
+        doAnimation();
+        updateStatus(AnimationStatusEnum.PENDING);
+    }, [animationStatusState]);
+
+    async function animate(): Promise<AnimationStatusEnum> {
+        for (const char of props.text) {
+            await delay();
+            charList.push(char);
+            updateText(charList.join(""));
+        }
+        return Promise.resolve(AnimationStatusEnum.COMPLETED);
     }
 
-    delay(): Promise<void> {
+    function delay(): Promise<void> {
         return new Promise((resolve) => {
-            setTimeout(() => resolve(), this.speed)
+            setTimeout(() => resolve(), speed)
         })
     }
 
-    updateText(charList: string) {
-        this.setState(() => ({
-            text: charList
-        }));
+    function updateText(charList: string) {
+        setAnimationTextState(charList);
     }
 
-    updateStatus(status: StatusEnum) {
-        this.setState(() => ({
-            status: status
-        }));
+    function updateStatus(status: AnimationStatusEnum) {
+        setAnimationStatusState(status);
     }
 
-    render() {
-        return (
-            <div className="caption">
-                <span>{this.state.text}</span>
-                <TerminalCursor/>
-            </div>
-        );
-    }
+    return (
+        <div className="caption">
+            <span>{animationTextState}</span>
+            <TerminalCursor/>
+        </div>
+    );
 }

@@ -29,9 +29,9 @@
 }
 
 .caption {
-    padding: 20px 0;
+    padding: 0;
     font-weight: 400;
-    width: 300px;
+    width: 100%;
     text-align: left;
     line-break: strict;
     white-space: pre-line;

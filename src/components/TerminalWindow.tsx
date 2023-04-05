@@ -64,6 +64,9 @@ export default class TerminalWindow extends React.Component<any, any> {
                     <TerminalText
                         text={"@inhaltone"}/>
                 </div>
+                <div className="slot-here">
+                    <slot name="malakas" />
+                </div>
             </div>
         )
     }
