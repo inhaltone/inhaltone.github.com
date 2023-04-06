@@ -3,8 +3,6 @@ import './App.css';
 import TerminalText from "./components/TerminalText";
 import IconLogo from "./components/icons/IconLogo";
 import Terminal from "./components/Terminal";
-import IconTools from "./components/icons/IconTools";
-import IconSprocket from "./components/icons/IconSprocket";
 
 function App() {
     const [buttonState, setButtonState] = useState(false)
