@@ -3,6 +3,8 @@ import './App.css';
 import TerminalText from "./components/TerminalText";
 import IconLogo from "./components/icons/IconLogo";
 import Terminal from "./components/Terminal";
+import IconTools from "./components/icons/IconTools";
+import IconSprocket from "./components/icons/IconSprocket";
 
 function App() {
     const [buttonState, setButtonState] = useState(false)
@@ -15,7 +17,7 @@ function App() {
         <div className="App">
             <div className="home-banner">
                 <div onClick={toggle} className="logo">
-                    <IconLogo/>
+                    <IconLogo />
                 </div>
                 <Terminal status={buttonState} windowName={"inhalt@inhaltone: ~/Home"}>
                     <TerminalText
