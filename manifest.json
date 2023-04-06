@@ -1,12 +1,12 @@
 {
   "short_name": "@inhaltone",
   "name": "inhaltone.gihub.io",
+  "description": "Front-end engineer and 3D artist, with a focus on implementing Single Page Applications (SPAs) using modern JavaScript frameworks. Enthusiastic about deep learning, with experience in both single and multi-task learning, as well as neural architecture search using audio signal processing.",
   "icons": [
     {
       "src": "favicon.svg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/svg+xml",
-      "purpose": "any"
+      "type": "image/svg+xml"
     },
     {
       "src": "logo192.png",
