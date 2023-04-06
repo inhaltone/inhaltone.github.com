@@ -1,0 +1,36 @@
+.pill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 12px;
+    border-radius: 20px;
+    /*border: 1px solid var(--white);*/
+    margin: 0 4px;
+    transition: background-color .2s ease;
+    /*background-color: transparent;*/
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+.pill:hover {
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.icon svg {
+    height: 16px;
+    width: auto;
+}
+
+.text {
+    font-size: 11px;
+    font-weight: var(--font-extra-bold);
+}

@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from "react";
-import style from '../css/terminal.module.css';
-import IconClose from "./icons/IconClose";
+import style from './terminal.module.css';
+import IconClose from "../icons/IconClose";
 
 enum TerminalWindowStatusEnum {
     CLOSED,

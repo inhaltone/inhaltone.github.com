@@ -1,11 +1,4 @@
-:root {
-    --terminal-radius: 10px;
-    --terminal-border-color: #6c6c6c;
-    --terminal-tools-border-color: #424242;
-    --terminal-background-color: rgba(17, 17, 17, 0.89);
-    --terminal-tools-background-color: rgb(31, 31, 31);
-    --orange: #E95420;
-}
+
 
 .terminal {
     position: fixed;
@@ -66,4 +59,19 @@
 
 .closeButton svg {
     fill: var(--orange);
+}
+
+.pulsate {
+    animation: pulsate 0.5s ease-in-out infinite both;
+}
+@keyframes pulsate {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
 }

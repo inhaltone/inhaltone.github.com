@@ -1,8 +1,17 @@
+
 :root {
     --font-regular: 400;
     --font-medium: 500;
     --font-bold: 700;
     --font-extra-bold: 800;
+    --terminal-radius: 10px;
+    --terminal-border-color: #6c6c6c;
+    --terminal-tools-border-color: #424242;
+    --terminal-background-color: rgba(17, 17, 17, 0.89);
+    --terminal-tools-background-color: rgb(31, 31, 31);
+    --orange: #E95420;
+    --white: #ffffff;
+    --accent: #712cf9;
 }
 
 @font-face {
@@ -65,23 +74,8 @@
     font-size: 1em;
 }
 
-@keyframes rotation-infinite {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
 .App {
     text-align: center;
-}
-
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -90,28 +84,9 @@
     }
 }
 
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
 .App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    color: var(--white);
+    text-decoration: none;
 }
 
 .slide-out-blurred-bottom {
