@@ -21,9 +21,7 @@ export default function TerminalText({text}: PropsInterface) {
 
     useEffect(() => {
         if (animationStatusState === AnimationStatusEnum.READY) {
-            doAnimation().then((status) => {
-                console.log('RESPONSE=> ', status);
-            });
+            doAnimation();
         }
     }, [animationStatusState, doAnimation])
 
@@ -47,7 +45,7 @@ export default function TerminalText({text}: PropsInterface) {
     return (
         <div className="caption">
             <span>{animationTextState}</span>
-            <TerminalCursor/>
+            {animationStatusState !== AnimationStatusEnum.COMPLETED ? <TerminalCursor/> : null}
         </div>
     );
 }

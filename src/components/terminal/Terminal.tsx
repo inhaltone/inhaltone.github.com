@@ -15,9 +15,8 @@ interface TerminalProps extends React.PropsWithChildren {
 export default function Terminal({children, windowName, status}: TerminalProps) {
     const terminalRef: React.MutableRefObject<HTMLDivElement | null> = useRef(null);
     const [terminalStatus, setTerminalStatus] = useState(TerminalWindowStatusEnum.CLOSED);
-
+    
     useEffect(() => {
-        console.log('STATUS: => ', status);
         status ? openWindow() : closeWindow();
         // terminalRef.current!.classList.add('slide-in-blurred-bottom');
     }, [status]);

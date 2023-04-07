@@ -18,9 +18,9 @@ export default function Header() {
                         </Pill>
                     </a>
                     <a className="App-link" rel="noreferrer" href="https://github.com/inhaltone" target="_blank">
-                    <Pill text={"@inhaltone"}>
-                        <IconGithub/>
-                    </Pill>
+                        <Pill text={"@inhaltone"}>
+                            <IconGithub/>
+                        </Pill>
                     </a>
                 </div>
             </div>
