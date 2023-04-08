@@ -1,5 +1,6 @@
 import React, {useCallback, useEffect, useState} from "react";
 import TerminalCursor from "./TerminalCursor";
+import styles from './terminal.module.scss';
 
 enum AnimationStatusEnum {
     READY = 'ready',
@@ -43,7 +44,7 @@ export default function TerminalText({text}: PropsInterface) {
     }
 
     return (
-        <div className="caption">
+        <div className={styles.terminalCaption}>
             <span>{animationTextState}</span>
             {animationStatusState !== AnimationStatusEnum.COMPLETED ? <TerminalCursor/> : null}
         </div>

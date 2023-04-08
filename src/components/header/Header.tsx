@@ -1,4 +1,4 @@
-import styles from './header.module.css';
+import styles from './header.module.scss';
 import Pill from "../pill/Pill";
 import TerminalText from "../terminal/TerminalText";
 import IconMail from "../icons/IconMail";
@@ -23,6 +23,9 @@ export default function Header() {
                         </Pill>
                     </a>
                 </div>
+            </div>
+            <div className={styles.headerInfo}>
+                {/*<Pill text={'Info'}/>*/}
             </div>
         </header>
     )

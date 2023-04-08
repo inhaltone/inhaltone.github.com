@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from "react";
-import style from './terminal.module.css';
+import style from './terminal.module.scss';
 import IconClose from "../icons/IconClose";
 
 enum TerminalWindowStatusEnum {
@@ -15,16 +15,16 @@ interface TerminalProps extends React.PropsWithChildren {
 export default function Terminal({children, windowName, status}: TerminalProps) {
     const terminalRef: React.MutableRefObject<HTMLDivElement | null> = useRef(null);
     const [terminalStatus, setTerminalStatus] = useState(TerminalWindowStatusEnum.CLOSED);
-    
+
     useEffect(() => {
         status ? openWindow() : closeWindow();
         // terminalRef.current!.classList.add('slide-in-blurred-bottom');
     }, [status]);
 
     function closeWindow() {
-        terminalRef.current?.classList.remove('slide-in-blurred-bottom');
         terminalRef.current?.classList.add('slide-out-blurred-bottom');
-        setTerminalStatus(TerminalWindowStatusEnum.CLOSED);
+        terminalRef.current?.classList.remove('slide-in-blurred-bottom');
+        setTimeout(() => setTerminalStatus(TerminalWindowStatusEnum.CLOSED), 500);
     }
 
     function openWindow() {

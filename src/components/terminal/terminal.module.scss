@@ -1,14 +1,17 @@
-
+@use "src/styles/_breakpoints.scss";
 
 .terminal {
     position: fixed;
     border: 1px solid var(--terminal-border-color);
     border-radius: var(--terminal-radius);
     background-color: var(--terminal-background-color);
-    width: 460px;
-    height: 340px;
+    width: 340px;
+    height: 300px;
     filter: drop-shadow(0px 12px 20px rgba(0, 0, 0, 0.48));
-    visibility: hidden;
+    @include breakpoints.media-breakpoint-up(lg) {
+        width: 540px;
+        height: 380px;
+    }
 }
 
 .terminalText {
@@ -74,4 +77,14 @@
     100% {
         opacity: 1;
     }
+}
+
+.terminalCaption {
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    line-break: strict;
+    white-space: pre-line;
+    font-weight: var(--font-medium);
+    font-size: 1em;
 }

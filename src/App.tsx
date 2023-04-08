@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './App.css';
+import './styles/App.css';
 import TerminalText from "./components/terminal/TerminalText";
 import IconLogo from "./components/icons/IconLogo";
 import Terminal from "./components/terminal/Terminal";
@@ -8,7 +8,7 @@ import Header from "./components/header/Header";
 function App() {
     const [buttonState, setButtonState] = useState(false)
 
-    function toggle() {
+    function toggleModal() {
         setButtonState((prevState) => !prevState);
     }
 
@@ -16,7 +16,7 @@ function App() {
         <div className="App">
             <Header/>
             <div className="home-banner">
-                <div onClick={toggle} className="logo">
+                <div onClick={toggleModal} className="logo">
                     <IconLogo/>
                 </div>
                 {buttonState ?

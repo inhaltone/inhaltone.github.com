@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './terminal.module.css';
+import styles from './terminal.module.scss';
 import {useState, useEffect} from "react";
 
 export default function TerminalCursor() {
