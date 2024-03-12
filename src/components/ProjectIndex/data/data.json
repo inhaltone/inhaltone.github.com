@@ -1,0 +1,200 @@
+[
+    {
+        "Title": "Tzagarakis",
+        "Design": "RolePlay",
+        "Dev": "Bracket",
+        "Tech": "Three.js",
+        "Description": null,
+        "Year": "2021",
+        "Url": "https://www.tzagkarakis.com/"
+    },
+    {
+        "Title": "Viewpal",
+        "Design": "RolePlay",
+        "Dev": "Bracket",
+        "Tech": "Nuxt.js",
+        "Description": null,
+        "Year": "2022",
+        "Url": "https://www.viewpal.com/"
+    },
+    {
+        "Title": "Stegi Radio",
+        "Design": "NMRC",
+        "Dev": "Gendy",
+        "Tech": "Vue.js",
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://stegi.radio/"
+    },
+    {
+        "Title": "Localwatch",
+        "Design": "Roleplay",
+        "Dev": "Bracket",
+        "Tech": "Vue.js",
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://athens.localwatch.gr/"
+    },
+    {
+        "Title": "Climatebook",
+        "Design": "Roleplay",
+        "Dev": "Bracket",
+        "Tech": "Wordpress",
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://climatebook.gr/"
+    },
+    {
+        "Title": "Taxjustice network podcasts",
+        "Design": "Roleplay",
+        "Dev": "Bracket",
+        "Tech": "Wordpress",
+        "Description": null,
+        "Year": "2024",
+        "Url": "https://podcasts.taxjustice.net/"
+    },
+    {
+        "Title": "Ecodialogues",
+        "Design": "Roleplay",
+        "Dev": "Bracket",
+        "Tech": "Wordpress",
+        "Description": null,
+        "Year": "2022",
+        "Url": "https://ecodialogues.gr/"
+    },
+    {
+        "Title": "Federica Scalisse",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Tech": "Nuxt.js",
+        "Description": null,
+        "Year": "2021",
+        "Url": "https://federicascalise.com/"
+    },
+    {
+        "Title": "Ioanna Paraskevopoulou",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Tech": "Wordpress",
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://ioannaparaskevopoulou.com/"
+    },
+    {
+        "Title": "Ioanna Vlachaki",
+        "Design": "Ogust",
+        "Dev": "Gendy",
+        "Tech": "Wordpress",
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://ioannavlachaki.com/"
+    },
+    {
+        "Title": "Mythogram: Underwatchful eyes",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Tech": "Three.js",
+        "Description": null,
+        "Year": "2021",
+        "Url": "https://inhaltone.github.io/mythogram/"
+    },
+    {
+        "Title": "Topio",
+        "Design": "Roleplay",
+        "Dev": "Bracket / Athena Research & Innovation Center in Information Communication & Knowledge Technologies",
+        "Tech": "Vue.js",
+        "Description": null,
+        "Year": "2021",
+        "Url": "https://topio.market/"
+    },
+    {
+        "Title": "Skag",
+        "Design": "stereotropism",
+        "Dev": "Bracket",
+        "Tech": "Vanilla javascript",
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://skaginspires.gr/"
+    },
+    {
+        "Title": "Social Workers Defenders",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Tech": "React.js",
+        "Description": null,
+        "Year": "2024",
+        "Url": "https://swhr-defenders.github.io/"
+    },
+    {
+        "Title": "BasedOn",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Tech": "React.js",
+        "Description": null,
+        "Year": "2024",
+        "Url": null
+    },
+    {
+        "Title": "Gaiasense",
+        "Design": "Roleplay",
+        "Dev": "Bracket",
+        "Tech": "Wordpress",
+        "Description": null,
+        "Year": "2024",
+        "Url": "https://www.gaiasense.gr/"
+    },
+    {
+        "Title": "Ebrains Dashboard",
+        "Design": "Roleplay",
+        "Dev": "Bracket / Athena Research & Innovation Center in Information Communication & Knowledge Technologies",
+        "Tech": "Vue.js",
+        "Description": "UI Kit",
+        "Year": "2023",
+        "Url": "https://www.ebrains.eu/"
+    },
+    {
+        "Title": "Hyperlands",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Tech": "React.js",
+        "Description": null,
+        "Year": "2022",
+        "Url": "https://inhaltone.github.io/hyperlands/"
+    },
+    {
+        "Title": "MLVC",
+        "Design": null,
+        "Dev": null,
+        "Tech": null,
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://mlvibecaptions.github.io/docs/abstract"
+    },
+    {
+        "Title": "Konstanza Kapsali",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Tech": "React.js",
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://konstanzakapsali.com/"
+    },
+    {
+        "Title": "TILT Platform",
+        "Design": "Gendy",
+        "Dev": null,
+        "Tech": "Wordpress",
+        "Description": null,
+        "Year": "2022",
+        "Url": "https://tiltplatform.com/"
+    },
+    {
+        "Title": "Spaces of Faux Intimacies",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Tech": "Vue.js",
+        "Description": null,
+        "Year": "2021",
+        "Url": null
+    }
+]

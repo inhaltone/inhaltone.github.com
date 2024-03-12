@@ -4,10 +4,17 @@ body {
     background-color: #1a1b1e;
     color: white;
     font-size: 14px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
 }
 
 code {
     font-family: 'JetBrainsMono', monospace;
+}
+
+button {
+    font-family: inherit;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
 }

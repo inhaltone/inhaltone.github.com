@@ -9,22 +9,6 @@ export default function TerminalCursor() {
         setCursor('▆');
     }, [])
 
-    // const loop = () => {
-    //     setInterval(() => {
-    //         if (this.cursor) {
-    //             this.setState(() => ({
-    //                 cursor: "▆"
-    //             }));
-    //             this.cursor = false;
-    //         } else {
-    //             this.setState(() => ({
-    //                 cursor: ""
-    //             }));
-    //             this.cursor = true;
-    //         }
-    //     }, this.speed);
-    // }
-
 
     return (
         <span className={styles.pulsate}>{cursor}</span>

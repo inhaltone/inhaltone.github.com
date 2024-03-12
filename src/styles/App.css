@@ -18,6 +18,16 @@
     background-color: var(--white);
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    transition: opacity .2s ease;
+}
+
+a:hover {
+    opacity: .6;
+}
+
 @font-face {
     font-family: 'JetBrainsMono';
     src: url('../fonts/JetBrainsMono-Regular.woff2') format('woff2');
@@ -62,30 +72,6 @@
     width: 100px;
     height: 100px;
     animation: rotation-infinite 4s linear infinite both;
-}
-
-.logo:hover svg {
-    fill: var(--orange);
-}
-
-@keyframes rotation-infinite {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
-.App {
-    text-align: center;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
 }
 
 .App-link {
