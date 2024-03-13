@@ -11,6 +11,7 @@
     --orange: #E95420;
     --white: #ffffff;
     --accent: #712cf9;
+    --colorBrand: #6e32e1;
 }
 
 ::selection {
@@ -118,5 +119,33 @@ a:hover {
         filter: blur(0);
         opacity: 1;
         /*visibility: visible;*/
+    }
+}
+
+.scale-in-center {
+    animation: scale-in-center 0.6s cubic-bezier(0.770, 0.000, 0.175, 1.000) both;
+}
+@keyframes scale-in-center {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.scale-out-center {
+    animation: scale-out-center 0.4s cubic-bezier(0.770, 0.000, 0.175, 1.000) both;
+}
+
+@keyframes scale-out-center {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 1;
     }
 }

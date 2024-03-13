@@ -1,6 +1,7 @@
 @use "src/styles/_breakpoints.scss";
 
 .terminal {
+    z-index: 9999;
     position: fixed;
     border: 1px solid var(--terminal-border-color);
     border-radius: var(--terminal-radius);
@@ -8,6 +9,7 @@
     width: 340px;
     height: 300px;
     filter: drop-shadow(0px 12px 20px rgba(0, 0, 0, 0.48));
+    backdrop-filter: blur(2px);
     @include breakpoints.media-breakpoint-up(lg) {
         width: 540px;
         height: 380px;
@@ -15,7 +17,7 @@
 }
 
 .terminalText {
-    padding: 5px 10px;
+    padding: 15px 20px;
 }
 
 .toolbox {
@@ -57,11 +59,13 @@
 }
 
 .closeButton:hover {
-    filter: invert(1);
+    //filter: invert(1);
+    fill: var(--colorBrand);
 }
 
 .closeButton svg {
-    fill: var(--orange);
+    fill: white;
+    //fill: var(--orange);
 }
 
 .pulsate {

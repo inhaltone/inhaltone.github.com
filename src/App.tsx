@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/App.css';
+import './styles/App.scss';
 import Header from "./components/header/Header";
 // import ProjectIndex from "./components/ProjectIndex/ProjectIndex";
 function App() {

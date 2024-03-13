@@ -8,14 +8,14 @@
   right: 0;
   flex-direction: column;
   justify-content: space-between;
-  /*font-weight: var(--font-extra-bold);*/
   font-weight: var(--font-medium);
-  /*text-transform: uppercase;*/
   font-size: 12px;
+  background-color: transparent;
+  z-index: 1;
+  mix-blend-mode: difference;
 }
 
 .headerInfo {
-  //width: 100%;
   padding: 5px 10px;
   display: flex;
   align-items: center;
@@ -32,9 +32,11 @@
   align-items: center;
   justify-content: center;
   padding: 5px 0;
+  mix-blend-mode: difference;
   @include breakpoints.media-breakpoint-up(lg) {
     padding: 0;
   }
+
   span {
     background-color: transparent;
     border: none;
@@ -51,50 +53,10 @@
   cursor: pointer;
   transition: opacity .4s ease;
   position: relative;
-  z-index: 2;
+  //z-index: 2;
+  font-size: inherit;
 
   &:hover {
     opacity: .6;
-  }
-}
-
-.infoContainer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.56);
-  backdrop-filter: blur(4px);
-  visibility: hidden;
-  opacity: 0;
-  transition: all .6s ease;
-}
-
-.infoContainerVisible {
-  visibility: visible;
-  opacity: 1;
-  transition: all .4s ease;
-}
-
-.infoContainerLayout {
-  max-width: 768px;
-  padding: 60px 20px;
-  text-align: left;
-}
-
-.socialList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  li {
-    margin: 4px 0;
-  }
-
-  svg {
-    width: 14px;
-    height: 14px;
   }
 }

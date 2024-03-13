@@ -13,8 +13,17 @@ interface TerminalProps extends React.PropsWithChildren {
 }
 
 export default function Terminal({children, windowName, status}: TerminalProps) {
+    // const classAnimationEnter = 'slide-in-blurred-bottom';
+    // const classAnimationLeave = 'slide-out-blurred-bottom';
+    const classAnimationEnter = 'scale-in-center';
+    const classAnimationLeave = 'scale-out-center';
     const terminalRef: React.MutableRefObject<HTMLDivElement | null> = useRef(null);
     const [terminalStatus, setTerminalStatus] = useState(TerminalWindowStatusEnum.CLOSED);
+
+    useEffect(() => {
+        terminalRef.current!.style.top = `${window.innerWidth / 2}px`;
+        terminalRef.current!.style.top = `${window.innerHeight / 2}px`;
+    }, [terminalRef]);
 
     useEffect(() => {
         status ? openWindow() : closeWindow();
@@ -22,13 +31,14 @@ export default function Terminal({children, windowName, status}: TerminalProps) 
     }, [status]);
 
     function closeWindow() {
-        terminalRef.current?.classList.add('slide-out-blurred-bottom');
-        terminalRef.current?.classList.remove('slide-in-blurred-bottom');
+        terminalRef.current?.classList.add(classAnimationLeave);
+        terminalRef.current?.classList.remove(classAnimationEnter);
         setTimeout(() => setTerminalStatus(TerminalWindowStatusEnum.CLOSED), 500);
     }
 
     function openWindow() {
-        terminalRef.current!.classList.add('slide-in-blurred-bottom');
+        terminalRef.current?.classList.remove(classAnimationLeave);
+        terminalRef.current!.classList.add(classAnimationEnter);
         setTerminalStatus(TerminalWindowStatusEnum.OPENED);
     }
 

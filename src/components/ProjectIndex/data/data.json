@@ -1,200 +1,302 @@
 [
     {
-        "Title": "Tzagarakis",
-        "Design": "RolePlay",
-        "Dev": "Bracket",
-        "Tech": "Three.js",
-        "Description": null,
-        "Year": "2021",
-        "Url": "https://www.tzagkarakis.com/"
-    },
-    {
-        "Title": "Viewpal",
-        "Design": "RolePlay",
-        "Dev": "Bracket",
-        "Tech": "Nuxt.js",
-        "Description": null,
-        "Year": "2022",
-        "Url": "https://www.viewpal.com/"
-    },
-    {
-        "Title": "Stegi Radio",
-        "Design": "NMRC",
-        "Dev": "Gendy",
-        "Tech": "Vue.js",
-        "Description": null,
-        "Year": "2023",
-        "Url": "https://stegi.radio/"
-    },
-    {
-        "Title": "Localwatch",
+        "Title": "Taxjustice Network Podcasts",
         "Design": "Roleplay",
         "Dev": "Bracket",
-        "Tech": "Vue.js",
-        "Description": null,
-        "Year": "2023",
-        "Url": "https://athens.localwatch.gr/"
-    },
-    {
-        "Title": "Climatebook",
-        "Design": "Roleplay",
-        "Dev": "Bracket",
-        "Tech": "Wordpress",
-        "Description": null,
-        "Year": "2023",
-        "Url": "https://climatebook.gr/"
-    },
-    {
-        "Title": "Taxjustice network podcasts",
-        "Design": "Roleplay",
-        "Dev": "Bracket",
-        "Tech": "Wordpress",
+        "Framework": "Wordpress",
+        "Type": "Blog",
+        "Tech": "Dynamic Website",
         "Description": null,
         "Year": "2024",
-        "Url": "https://podcasts.taxjustice.net/"
-    },
-    {
-        "Title": "Ecodialogues",
-        "Design": "Roleplay",
-        "Dev": "Bracket",
-        "Tech": "Wordpress",
-        "Description": null,
-        "Year": "2022",
-        "Url": "https://ecodialogues.gr/"
-    },
-    {
-        "Title": "Federica Scalisse",
-        "Design": "Gendy",
-        "Dev": "Gendy",
-        "Tech": "Nuxt.js",
-        "Description": null,
-        "Year": "2021",
-        "Url": "https://federicascalise.com/"
-    },
-    {
-        "Title": "Ioanna Paraskevopoulou",
-        "Design": "Gendy",
-        "Dev": "Gendy",
-        "Tech": "Wordpress",
-        "Description": null,
-        "Year": "2023",
-        "Url": "https://ioannaparaskevopoulou.com/"
-    },
-    {
-        "Title": "Ioanna Vlachaki",
-        "Design": "Ogust",
-        "Dev": "Gendy",
-        "Tech": "Wordpress",
-        "Description": null,
-        "Year": "2023",
-        "Url": "https://ioannavlachaki.com/"
-    },
-    {
-        "Title": "Mythogram: Underwatchful eyes",
-        "Design": "Gendy",
-        "Dev": "Gendy",
-        "Tech": "Three.js",
-        "Description": null,
-        "Year": "2021",
-        "Url": "https://inhaltone.github.io/mythogram/"
-    },
-    {
-        "Title": "Topio",
-        "Design": "Roleplay",
-        "Dev": "Bracket / Athena Research & Innovation Center in Information Communication & Knowledge Technologies",
-        "Tech": "Vue.js",
-        "Description": null,
-        "Year": "2021",
-        "Url": "https://topio.market/"
-    },
-    {
-        "Title": "Skag",
-        "Design": "stereotropism",
-        "Dev": "Bracket",
-        "Tech": "Vanilla javascript",
-        "Description": null,
-        "Year": "2023",
-        "Url": "https://skaginspires.gr/"
+        "Url": "https://podcasts.taxjustice.net/",
+        "ImageUrl": null
     },
     {
         "Title": "Social Workers Defenders",
         "Design": "Gendy",
         "Dev": "Gendy",
-        "Tech": "React.js",
+        "Framework": "React.js",
+        "Type": "Research",
+        "Tech": "Research",
         "Description": null,
         "Year": "2024",
-        "Url": "https://swhr-defenders.github.io/"
+        "Url": "https://swhr-defenders.github.io/",
+        "ImageUrl": null
     },
     {
         "Title": "BasedOn",
         "Design": "Gendy",
         "Dev": "Gendy",
-        "Tech": "React.js",
+        "Framework": "React.js",
+        "Type": "SaaS",
+        "Tech": "Single Page Application (SPA)",
         "Description": null,
         "Year": "2024",
-        "Url": null
+        "Url": null,
+        "ImageUrl": null
     },
     {
         "Title": "Gaiasense",
         "Design": "Roleplay",
         "Dev": "Bracket",
-        "Tech": "Wordpress",
+        "Framework": "Wordpress",
+        "Type": "SaaS",
+        "Tech": "Dynamic Website",
         "Description": null,
         "Year": "2024",
-        "Url": "https://www.gaiasense.gr/"
+        "Url": "https://www.gaiasense.gr/",
+        "ImageUrl": null
     },
     {
-        "Title": "Ebrains Dashboard",
-        "Design": "Roleplay",
-        "Dev": "Bracket / Athena Research & Innovation Center in Information Communication & Knowledge Technologies",
-        "Tech": "Vue.js",
-        "Description": "UI Kit",
+        "Title": "Stegi Radio",
+        "Design": "NMRC",
+        "Dev": "Gendy",
+        "Framework": "Vue.js",
+        "Type": "SaaS",
+        "Tech": "Single Page Application (SPA)",
+        "Description": null,
         "Year": "2023",
-        "Url": "https://www.ebrains.eu/"
+        "Url": "https://stegi.radio/",
+        "ImageUrl": null
     },
     {
-        "Title": "Hyperlands",
+        "Title": "Localwatch",
+        "Design": "Roleplay",
+        "Dev": "Bracket",
+        "Framework": "Vue.js",
+        "Type": "SaaS",
+        "Tech": "Single Page Application (SPA)",
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://athens.localwatch.gr/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "Climatebook",
+        "Design": "Roleplay",
+        "Dev": "Bracket",
+        "Framework": "Wordpress",
+        "Type": "Blog",
+        "Tech": "Dynamic Website",
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://climatebook.gr/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "Ioanna Paraskevopoulou",
         "Design": "Gendy",
         "Dev": "Gendy",
-        "Tech": "React.js",
+        "Framework": "Wordpress",
+        "Type": "Portfolio",
+        "Tech": "Dynamic Website",
         "Description": null,
-        "Year": "2022",
-        "Url": "https://inhaltone.github.io/hyperlands/"
+        "Year": "2023",
+        "Url": "https://ioannaparaskevopoulou.com/",
+        "ImageUrl": null
     },
     {
-        "Title": "MLVC",
+        "Title": "Ioanna Vlachaki",
+        "Design": "Ogust",
+        "Dev": "Gendy",
+        "Framework": "Wordpress",
+        "Type": "Portfolio",
+        "Tech": "Dynamic Website",
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://ioannavlachaki.com/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "Skag Inspires",
+        "Design": "stereotropism",
+        "Dev": "Bracket",
+        "Framework": "Vanilla javascript",
+        "Type": "Blog",
+        "Tech": "Dynamic Website",
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://skaginspires.gr/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "Ebrains",
+        "Design": "Roleplay",
+        "Dev": "Bracket / Athena Research & Innovation Center in Information Communication & Knowledge Technologies",
+        "Framework": "Vue.js",
+        "Type": "SaaS",
+        "Tech": "Single Page Application (SPA)",
+        "Description": "UI Kit",
+        "Year": "2023",
+        "Url": "https://www.ebrains.eu/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "Machine Learning Vibe Captions",
         "Design": null,
         "Dev": null,
+        "Framework": null,
+        "Type": "Research",
         "Tech": null,
         "Description": null,
         "Year": "2023",
-        "Url": "https://mlvibecaptions.github.io/docs/abstract"
+        "Url": "https://mlvibecaptions.github.io/docs/abstract",
+        "ImageUrl": null
     },
     {
         "Title": "Konstanza Kapsali",
         "Design": "Gendy",
         "Dev": "Gendy",
-        "Tech": "React.js",
+        "Framework": "React.js",
+        "Type": "Portfolio",
+        "Tech": "Progressive Web App (PWA)",
         "Description": null,
         "Year": "2023",
-        "Url": "https://konstanzakapsali.com/"
+        "Url": "https://konstanzakapsali.com/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "SND Module",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Framework": "Vanilla js",
+        "Type": "Module",
+        "Tech": "Web Component",
+        "Description": null,
+        "Year": "2023",
+        "Url": "https://inhaltone.github.io/sndcld-player/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "Viewpal",
+        "Design": "RolePlay",
+        "Dev": "Bracket",
+        "Framework": "Nuxt.js",
+        "Type": "SaaS",
+        "Tech": "Single Page Application (SPA)",
+        "Description": null,
+        "Year": "2022",
+        "Url": "https://www.viewpal.com/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "Ecodialogues",
+        "Design": "Roleplay",
+        "Dev": "Bracket",
+        "Framework": "Wordpress",
+        "Type": "SaaS",
+        "Tech": "Single Page Application (SPA)",
+        "Description": null,
+        "Year": "2022",
+        "Url": "https://ecodialogues.gr/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "Hyperlands",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Framework": "React.js",
+        "Type": "Research",
+        "Tech": "Research",
+        "Description": null,
+        "Year": "2022",
+        "Url": "https://inhaltone.github.io/hyperlands/",
+        "ImageUrl": null
     },
     {
         "Title": "TILT Platform",
         "Design": "Gendy",
         "Dev": null,
-        "Tech": "Wordpress",
+        "Framework": "Wordpress",
+        "Type": null,
+        "Tech": "Dynamic Website",
         "Description": null,
         "Year": "2022",
-        "Url": "https://tiltplatform.com/"
+        "Url": "https://tiltplatform.com/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "Animmma",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Framework": "Vue.js",
+        "Type": "Research",
+        "Tech": "Progressive Web App (PWA)",
+        "Description": null,
+        "Year": "2022",
+        "Url": null,
+        "ImageUrl": null
+    },
+    {
+        "Title": "Tzagarakis",
+        "Design": "RolePlay",
+        "Dev": "Bracket",
+        "Framework": "Three.js",
+        "Type": "Portfolio",
+        "Tech": "Dynamic Website",
+        "Description": null,
+        "Year": "2021",
+        "Url": "https://www.tzagkarakis.com/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "Federica Scalisse",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Framework": "Nuxt.js",
+        "Type": "Portfolio",
+        "Tech": "Single Page Application (SPA)",
+        "Description": null,
+        "Year": "2021",
+        "Url": "https://federicascalise.com/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "Mythogram: Under watchful eyes",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "Framework": "Three.js",
+        "Type": "Research",
+        "Tech": "Research",
+        "Description": null,
+        "Year": "2021",
+        "Url": "https://inhaltone.github.io/mythogram/",
+        "ImageUrl": null
+    },
+    {
+        "Title": "Topio",
+        "Design": "Roleplay",
+        "Dev": "Bracket / Athena Research & Innovation Center in Information Communication & Knowledge Technologies",
+        "Framework": "Vue.js",
+        "Type": "SaaS",
+        "Tech": "Single Page Application (SPA)",
+        "Description": null,
+        "Year": "2021",
+        "Url": "https://topio.market/",
+        "ImageUrl": null
     },
     {
         "Title": "Spaces of Faux Intimacies",
         "Design": "Gendy",
         "Dev": "Gendy",
-        "Tech": "Vue.js",
+        "Framework": "Vue.js",
+        "Type": null,
+        "Tech": "Single Page Application (SPA)",
         "Description": null,
         "Year": "2021",
-        "Url": null
+        "Url": null,
+        "ImageUrl": null
+    },
+    {
+        "Title": "Nutu",
+        "Design": null,
+        "Dev": "Gendy",
+        "Framework": "Wordpress",
+        "Type": null,
+        "Tech": "Dynamic Website",
+        "Description": null,
+        "Year": "2020",
+        "Url": "https://nutu.at/",
+        "ImageUrl": null
     }
 ]
