@@ -27,18 +27,18 @@ export default function HeaderInfo({showInfo}: HeaderInfoProps) {
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://github.com/inhaltone">
+                            <a target="_blank" href="https://github.com/inhaltone" rel="noreferrer">
                                 GITHUB
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.instagram.com/inhalt__/">
+                            <a target="_blank" href="https://www.instagram.com/inhalt__/" rel="noreferrer">
                                 INSTAGRAM
                             </a>
                         </li>
                         <li>
                             <a target="_blank"
-                               href="https://www.linkedin.com/in/antonis-kalagkatsis-347404226/">
+                               href="https://www.linkedin.com/in/antonis-kalagkatsis-347404226/" rel="noreferrer">
                                 LINKEDIN
                             </a>
                         </li>

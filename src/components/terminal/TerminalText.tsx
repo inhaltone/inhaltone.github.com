@@ -22,7 +22,7 @@ export default function TerminalText({text}: PropsInterface) {
 
     useEffect(() => {
         if (animationStatusState === AnimationStatusEnum.READY) {
-            doAnimation();
+            doAnimation().then(() => {});
         }
     }, [animationStatusState, doAnimation])
 
