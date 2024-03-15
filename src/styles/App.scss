@@ -1,4 +1,5 @@
 :root {
+    --fontAmerica: 'GT America LG';
     --font-regular: 400;
     --font-medium: 500;
     --font-bold: 700;
@@ -12,6 +13,7 @@
     --white: #ffffff;
     --accent: #712cf9;
     --colorBrand: #6e32e1;
+    --gap: 30px;
 }
 
 ::selection {
@@ -27,6 +29,13 @@ a {
 
 a:hover {
     opacity: .6;
+}
+@font-face {
+    font-family: 'GT America LG';
+    src: url('../fonts/GT-America-LG-Expanded-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -49,14 +58,6 @@ a:hover {
     font-family: 'JetBrainsMono';
     src: url('../fonts/JetBrainsMono-Bold.woff2') format('woff2');
     font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'JetBrainsMono';
-    src: url('../fonts/JetBrainsMono-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
@@ -148,4 +149,23 @@ a:hover {
         transform: scale(0);
         opacity: 1;
     }
+}
+
+.collapse {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows .8s cubic-bezier(.3,0,.2,1);
+}
+
+.collapse.expanded {
+    grid-template-rows: 1fr;
+}
+.collapse-expandable {
+    min-height: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+.collapse.expanded .collapse-expandable {
+    opacity: 1;
 }

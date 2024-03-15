@@ -11,38 +11,54 @@
   font-weight: var(--font-medium);
   font-size: 12px;
   background-color: transparent;
-  z-index: 1;
+  z-index: 2;
   mix-blend-mode: difference;
-}
-
-.headerInfo {
   padding: 5px 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
   @include breakpoints.media-breakpoint-up(lg) {
-    flex-direction: row;
     padding: 10px 15px;
   }
 }
 
-.headerInfoBox {
+.headerInfo {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 0;
-  mix-blend-mode: difference;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: var(--gap);
   @include breakpoints.media-breakpoint-up(lg) {
-    padding: 0;
+    flex-direction: row;
+    gap: var(--gap);
   }
 
-  span {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: white;
-    font-weight: inherit;
+  > div:nth-child(3) {
+    flex: 1;
+  }
+
+  > div:nth-child(4) {
+    justify-content: flex-end;
+  }
+}
+
+.headerInfoCol {
+  width: 25%;
+  display: flex;
+  position: relative;
+  padding-left: 2px;
+  &:not(:last-child) {
+    &:before {
+      content: "";
+      width: 1px;
+      background: gray;
+      height: 66px;
+      position: absolute;
+      left: -4px;
+      top: 0;
+    }
+  }
+
+  svg {
+    fill: white;
+    width: 123px;
   }
 }
 
@@ -53,7 +69,6 @@
   cursor: pointer;
   transition: opacity .4s ease;
   position: relative;
-  //z-index: 2;
   font-size: inherit;
 
   &:hover {

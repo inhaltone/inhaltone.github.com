@@ -1,0 +1,128 @@
+.projectCollapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows .8s cubic-bezier(.3, 0, .2, 1);
+}
+
+.projectCollapseExpanded {
+  grid-template-rows: 1fr;
+}
+
+.projectIndexItem {
+  display: grid;
+}
+
+.projectIndexTitle {
+  font-size: 33px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: transform .2s ease-in-out;
+  display: block;
+  cursor: pointer;
+  position: sticky;
+  top: 40px;
+  font-family: var(--fontAmerica);
+
+  &:hover {
+    transform: skewX(-16deg);
+    //transform: translateX(12px);
+  }
+}
+
+.projectIndexTitleActive {
+  transform: skewX(-16deg);
+  transition: opacity .2s ease-in-out;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.projectIndexInfo {
+  min-height: 0;
+  opacity: 0;
+  transition: all 800ms ease;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap);
+
+  > div:nth-child(3) {
+    flex: 1;
+  }
+}
+
+.projectIndexInfoExpanded {
+  opacity: 1;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.projectIndexInfoCol {
+  width: 25%;
+  display: grid;
+  gap: 12px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid #343434;
+      font-size: 12px;
+    }
+  }
+}
+
+.projectIndexInfoColHeading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding-bottom: 4px;
+  font-family: var(--fontAmerica);
+  min-height: 25px;
+
+  p {
+    font-family: inherit;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  a {
+    display: flex;
+  }
+
+  svg {
+    height: 20px;
+  }
+}
+
+.projectIndexInfoColText {
+  font-size: 12px;
+}
+
+.projectIndexInfoColAssets {
+  border: 1px solid gray;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: grid;
+  gap: 8px;
+
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  video {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,16 +1,13 @@
-.projectIndex {
-  padding: 180px 15px 40px;
+.projectIndexLayout {
+  display: flex;
 }
 
-.projectIndexItem {
-  font-size: 36px;
-  text-transform: uppercase;
-  font-weight: 500;
-  transition: transform .2s ease-in-out;
-  display: block;
+.projectDetail {
+  border: 1px solid white;
+}
 
-  &:hover {
-    transform: skewX(-16deg);
-    //transform: translateX(12px);
-  }
+.projectIndex {
+  padding: 180px 15px 40px;
+  max-width: 1920px;
+  width: 100%;
 }
