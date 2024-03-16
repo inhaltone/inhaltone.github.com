@@ -35,6 +35,7 @@ export default function HyperObserver({children, delay = 0, ratio = [1.0]}: Hype
         return () => {
             if (current) observer.unobserve(current);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [hyperObserverRef, observed]);
 
     return (
