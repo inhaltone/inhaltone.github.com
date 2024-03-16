@@ -81,8 +81,6 @@ export default function ProjectSlot({project}: ProjectSlotProps) {
                                                  alt={`${project.Title} view ${index}`}/>
                                         )
                                     }) : null}
-                                    {/*<img src={'/image/taxjustice/tax.png'}/>*/}
-                                    {/*<video ref={video} loop playsInline muted src={'/video/swhr.mov'} />*/}
                                 </div>
                             </HyperObserver>) : null}
                     </div>
