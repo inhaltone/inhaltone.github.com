@@ -9,12 +9,13 @@
   flex-direction: column;
   justify-content: space-between;
   font-weight: var(--font-medium);
-  font-size: 12px;
+  font-size: 10px;
   background-color: transparent;
   z-index: 2;
   mix-blend-mode: difference;
   padding: 5px 10px;
   @include breakpoints.media-breakpoint-up(lg) {
+    font-size: 12px;
     padding: 10px 15px;
   }
 }
@@ -23,11 +24,16 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-direction: column;
+  //flex-direction: column;
   gap: var(--gap);
   @include breakpoints.media-breakpoint-up(lg) {
     flex-direction: row;
     gap: var(--gap);
+  }
+  @include breakpoints.media-breakpoint-down(lg) {
+    > div:nth-child(2) {
+      display: none;
+    }
   }
 
   > div:nth-child(3) {
@@ -44,18 +50,19 @@
   display: flex;
   position: relative;
   padding-left: 2px;
-  &:not(:last-child) {
-    &:before {
-      content: "";
-      width: 1px;
-      background: gray;
-      height: 66px;
-      position: absolute;
-      left: -4px;
-      top: 0;
+  @include breakpoints.media-breakpoint-up(lg) {
+    &:not(:last-child) {
+      &:before {
+        content: "";
+        width: 1px;
+        background: gray;
+        height: 66px;
+        position: absolute;
+        left: -4px;
+        top: 0;
+      }
     }
   }
-
   svg {
     fill: white;
     width: 123px;

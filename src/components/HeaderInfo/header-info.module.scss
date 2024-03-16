@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints";
+
 .infoContainer {
   position: fixed;
   top: 0;
@@ -23,13 +25,19 @@
   max-width: 768px;
   padding: 120px 15px 60px;
   text-align: left;
+  @include media-breakpoint-down(lg) {
+    padding: 80px 15px 60px;
+  }
 }
 
 .infoContainerLayoutStack {
   display: flex;
   gap: 180px;
+  @include media-breakpoint-down(lg) {
+    gap: 40px;
+  }
 
-  p{
+  p {
     font-family: var(--fontAmerica);
   }
 }
@@ -41,6 +49,7 @@
 
   li {
     margin: 4px 0;
+
     a {
       color: inherit;
     }

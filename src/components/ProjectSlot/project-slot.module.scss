@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints";
+
 .projectCollapse {
   display: grid;
   grid-template-rows: 0fr;
@@ -14,7 +16,7 @@
 }
 
 .projectIndexTitle {
-  font-size: 33px;
+  font-size: 23px;
   text-transform: uppercase;
   font-weight: 500;
   transition: transform .2s ease-in-out;
@@ -23,9 +25,14 @@
   position: sticky;
   top: 40px;
   font-family: var(--fontAmerica);
+  @include media-breakpoint-up(lg) {
+    font-size: 33px;
+  }
 
   &:hover {
-    transform: skewX(-16deg);
+    @include media-breakpoint-up(lg) {
+      transform: skewX(-16deg);
+    }
     //transform: translateX(12px);
   }
 }
@@ -46,6 +53,9 @@
   display: flex;
   align-items: flex-start;
   gap: var(--gap);
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+  }
 
   > div:nth-child(3) {
     flex: 1;
@@ -62,6 +72,9 @@
   width: 25%;
   display: grid;
   gap: 12px;
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
 
   ul {
     margin: 0;

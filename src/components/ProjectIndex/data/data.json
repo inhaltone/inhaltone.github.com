@@ -81,7 +81,7 @@
         "Description": "Developed a pivotal component for my Master's thesis project. Engineered a data scraper using Node.js and TypeScript, seamlessly integrating with a Spring Boot application for real-time data storage. Curated and processed a dataset comprising sound files and metadata, focusing on pre-processing and cleaning. Implemented a custom deep learning model using PyTorch and TorchAudio, with TensorBoard for training progress monitoring. Primarily focused on single-task binary classification for genre prediction in the initial phase.",
         "Year": "2023",
         "Url": "https://mlvibecaptions.github.io/docs/abstract",
-        "imageList": null
+        "imageList": "mlvc/mlvc.png"
     },
     {
         "Title": "Stegi Radio",
@@ -95,7 +95,7 @@
         "Description": "Engineered custom audio players for seamless sound streaming and integration with Mixcloud service. Employed Vuex for efficient state management, ensuring precise control over single player instances. Designed UI and developed a custom CMS for radio station services, featuring image upload functionality and versatile UI module handling.",
         "Year": "2023",
         "Url": "https://stegi.radio/",
-        "imageList": null
+        "imageList": "stegiradio/stegiradio.png,stegiradio/stegiradio-mba.png"
     },
     {
         "Title": "Localwatch",
@@ -319,7 +319,7 @@
         "Description": "Crafted a personal A/V installation promo website, showcasing interactive features and utilizing a 3D model based on the main video component of the artwork. Employed the Three.js library to seamlessly control the 3D model directly within the browser interface, enhancing user engagement and inviting them to the exhibition.",
         "Year": "2021",
         "Url": "https://inhaltone.github.io/mythogram/",
-        "imageList": null
+        "imageList": "mythogram/mythogram.png"
     },
     {
         "Title": "Topio",

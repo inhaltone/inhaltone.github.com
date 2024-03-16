@@ -61,7 +61,7 @@ export default function ProjectSlot({project}: ProjectSlotProps) {
                     </div>
                     <div className={styles.projectIndexInfoCol}>
                         <div className={styles.projectIndexInfoColHeading}>
-                        <p>Description</p>
+                            <p>Description</p>
                         </div>
                         <div className={styles.projectIndexInfoColText}>
                             {project.Description}
@@ -72,17 +72,19 @@ export default function ProjectSlot({project}: ProjectSlotProps) {
                             <p>View</p>
                             <a href={project.Url} target={'_blank'} rel="noreferrer"><IconBoxArrowUpRight/></a>
                         </div>
-                        <HyperObserver>
-                        <div className={styles.projectIndexInfoColAssets}>
-                            {project.imageList ? project.imageList.split(',').map((e, index) => {
-                                return (
-                                    <img key={index} src={`/image/${e.trim()}`} alt={`${project.Title} view ${index}`}/>
-                                )
-                            }) : null}
-                            {/*<img src={'/image/taxjustice/tax.png'}/>*/}
-                            {/*<video ref={video} loop playsInline muted src={'/video/swhr.mov'} />*/}
-                        </div>
-                        </HyperObserver>
+                        {project.imageList ? (
+                            <HyperObserver>
+                                <div className={styles.projectIndexInfoColAssets}>
+                                    {project.imageList ? project.imageList.split(',').map((e, index) => {
+                                        return (
+                                            <img key={index} src={`/image/${e.trim()}`}
+                                                 alt={`${project.Title} view ${index}`}/>
+                                        )
+                                    }) : null}
+                                    {/*<img src={'/image/taxjustice/tax.png'}/>*/}
+                                    {/*<video ref={video} loop playsInline muted src={'/video/swhr.mov'} />*/}
+                                </div>
+                            </HyperObserver>) : null}
                     </div>
                 </div>
             </div>
