@@ -1,5 +1,19 @@
 [
     {
+        "Title": "Dryland: Pavilion of Greece — La Biennale di Venezia",
+        "Design": "Studio Precarity",
+        "Dev": "Gendy",
+        "FrontendFramework": "**",
+        "BackendFramework": "**",
+        "Type": "Landing Page",
+        "Tech": "Dynamic Website",
+        "Status": "Completed",
+        "Description": "Contributed to the Dryland: Pavilion of Greece project at La Biennale di Venezia. My tasks included implementing the intersection observer pattern for scroll interactions on video players and integrating a custom JavaScript module. This module facilitated asynchronous object movement across the viewport height, dynamically adjusting based on user scrolling behavior. It offers high configurability through a simple API, enabling customization of parameters such as mouse dragging amount, easing, and positioning.",
+        "Year": "2024",
+        "Url": "https://pavilionofgreece2024.emst.gr/website/",
+        "imageList": "dryland/dryland-mobile.png, dryland/dryland-mb.png"
+    },
+    {
         "Title": "Tax Justice Network Podcasts",
         "Design": "Roleplay",
         "Dev": "Bracket",
