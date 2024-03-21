@@ -11,7 +11,7 @@
   font-weight: var(--font-medium);
   font-size: 10px;
   background-color: transparent;
-  z-index: 2;
+  z-index: 10;
   mix-blend-mode: difference;
   padding: 5px 10px;
   @include breakpoints.media-breakpoint-up(lg) {
