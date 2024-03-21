@@ -1,8 +1,9 @@
-import {useRef, useState} from "react";
+import React, {useRef, useState} from "react";
 import styles from './project-slot.module.scss';
 import {Project} from "../../model/project";
 import IconBoxArrowUpRight from "../icons/IconBoxArrowUpRight";
 import HyperObserver from "../HyperObserver/HyperObserver";
+import ImageLazy from "../ImageLazy/ImageLazy";
 
 type ProjectSlotProps = {
     project: Project;
@@ -10,7 +11,6 @@ type ProjectSlotProps = {
 export default function ProjectSlot({project}: ProjectSlotProps) {
     const [isCollapse, setIsCollapse] = useState<boolean>(false);
     const projectTitle = useRef<HTMLDivElement>(null);
-
 
     return (
         <div className={styles.projectIndexItem}>
@@ -77,8 +77,8 @@ export default function ProjectSlot({project}: ProjectSlotProps) {
                                 <div className={styles.projectIndexInfoColAssets}>
                                     {project.imageList ? project.imageList.split(',').map((e, index) => {
                                         return (
-                                            <img key={index} src={`/image/${e.trim()}`}
-                                                 alt={`${project.Title} view ${index}`}/>
+                                            <ImageLazy key={index} src={`/image/${e.trim()}`}
+                                                       alt={`${project.Title} view ${index}`}/>
                                         )
                                     }) : null}
                                 </div>

@@ -24,7 +24,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  //flex-direction: column;
   gap: var(--gap);
   @include breakpoints.media-breakpoint-up(lg) {
     flex-direction: row;
@@ -65,7 +64,7 @@
   }
   svg {
     fill: white;
-    width: 123px;
+    width: 101px;
   }
 }
 
