@@ -12,7 +12,7 @@ const ImageLazy: React.FC<ImageProps> = (props) => {
     return (
         <figure className={styles.imageLazy}>
             <div className={isLoaded ? styles.imageLazyBlurLoaded : styles.imageLazyBlur}></div>
-            <img className={`${styles.imageLazyImg} ${isLoaded ? styles.imageLazyImgLoaded : ''}`} onLoad={handleImageLoad} {...props} />
+            <img alt={''} className={`${styles.imageLazyImg} ${isLoaded ? styles.imageLazyImgLoaded : ''}`} onLoad={handleImageLoad} {...props} />
         </figure>
     )
 }
