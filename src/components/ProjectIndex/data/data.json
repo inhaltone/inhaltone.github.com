@@ -210,7 +210,7 @@
         "imageList": null
     },
     {
-        "Title": "SND Module",
+        "Title": "SND CLD",
         "Design": "Anka",
         "Dev": "Anka",
         "FrontendFramework": "**",
@@ -221,6 +221,20 @@
         "Description": "Developed a web component using vanilla JavaScript, leveraging custom elements to optimize user experience while managing SoundCloud widgets for enhanced music playback functionality.",
         "Year": "2023",
         "Url": "https://inhaltone.github.io/sndcld-player/",
+        "imageList": null
+    },
+    {
+        "Title": "Blob Objekt",
+        "Design": "Anka",
+        "Dev": "Anka",
+        "FrontendFramework": "Three.js",
+        "BackendFramework": "**",
+        "Type": "Experimental",
+        "Tech": "WebGL",
+        "Status": "Work in Progress (WIP)",
+        "Description": "experimental WebGL project, where I utilize Three.js to explore fluid motion and color transitions. This project highlights my investigation into speed, surface coloring, and liquidity flow, all enhanced with subtle noise effects using post-processing shaders.",
+        "Year": "2023",
+        "Url": "https://inhaltone.github.io/blob-torus/",
         "imageList": null
     },
     {
