@@ -18,13 +18,14 @@
 .projectIndexTitle {
   font-size: 23px;
   text-transform: uppercase;
-  font-weight: 500;
   transition: transform .2s ease-in-out;
   display: block;
   cursor: pointer;
   position: sticky;
   top: 40px;
   font-family: var(--fontAmerica);
+  z-index: 2;
+  mix-blend-mode: difference;
   @include media-breakpoint-up(lg) {
     font-size: 33px;
   }
