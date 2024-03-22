@@ -70,7 +70,7 @@ export default function ProjectSlot({project}: ProjectSlotProps) {
                     <div className={styles.projectIndexInfoCol}>
                         <div className={styles.projectIndexInfoColHeading}>
                             <p>View</p>
-                            <a href={project.Url} target={'_blank'} rel="noreferrer"><IconBoxArrowUpRight/></a>
+                            <a aria-label={`View ${project.Title}`} href={project.Url} target={'_blank'} rel="noreferrer"><IconBoxArrowUpRight/></a>
                         </div>
                         {project.imageList ? (
                             <HyperObserver>

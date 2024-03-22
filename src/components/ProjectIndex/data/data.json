@@ -280,7 +280,7 @@
         "imageList": null
     },
     {
-        "Title": "TILT Platform",
+        "Title": "TILT",
         "Design": "Gendy",
         "Dev": "Gendy",
         "FrontendFramework": "**",
@@ -305,6 +305,48 @@
         "Description": "Developed an interactive prototype showcasing a user interface where users input terms to generate an infinite mixtape using an AI model. Implemented using Vue.js for seamless functionality.",
         "Year": "2022",
         "Url": null,
+        "imageList": null
+    },
+    {
+        "Title": "Mythogram: Underwatchful eyes",
+        "Design": "Anka",
+        "Dev": "Anka",
+        "FrontendFramework": "Three.js",
+        "BackendFramework": "**",
+        "Type": "Research",
+        "Tech": "WebGL",
+        "Status": "Completed",
+        "Description": "Crafted a personal A/V installation promo website, showcasing interactive features and utilizing a 3D model based on the main video component of the artwork. Employed the Three.js library to seamlessly control the 3D model directly within the browser interface, enhancing user engagement and inviting them to the exhibition.",
+        "Year": "2021",
+        "Url": "https://inhaltone.github.io/mythogram/",
+        "imageList": "mythogram/mythogram.png"
+    },
+    {
+        "Title": "Spaces of Faux Intimacies",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "FrontendFramework": "Vue.js",
+        "BackendFramework": "**",
+        "Type": "Fine Arts",
+        "Tech": "Single Page Application (SPA)",
+        "Status": "Archived",
+        "Description": "Developed an archival website showcasing artists from the 'Spaces of Faux Intimacies' exhibition in Berlin. Built as a single-page application using Vue.js, with custom endpoints and API calls integrated via WordPress CMS.",
+        "Year": "2021",
+        "Url": null,
+        "imageList": null
+    },
+    {
+        "Title": "Topio",
+        "Design": "Roleplay",
+        "Dev": "Bracket x Athena Research & Innovation Center",
+        "FrontendFramework": "Vue.js",
+        "BackendFramework": "Spring Boot",
+        "Type": "SaaS",
+        "Tech": "Single Page Application (SPA)",
+        "Status": "Completed",
+        "Description": "Developed the front end of a public website and dashboard interface, incorporating data visualizations using Highcharts. Utilized Vue.js with TypeScript support, adhering to object-oriented programming (OOP) code style for efficient development and maintenance.",
+        "Year": "2021",
+        "Url": "https://topio.market/",
         "imageList": null
     },
     {
@@ -333,48 +375,6 @@
         "Description": "Crafted a dynamic static website portfolio for illustrator and architect Federica Scalisse, elevating user experience through seamless navigation and captivating illustration animations within the single-page application interface.",
         "Year": "2021",
         "Url": "https://federicascalise.com/",
-        "imageList": null
-    },
-    {
-        "Title": "Mythogram: Underwatchful eyes",
-        "Design": "Anka",
-        "Dev": "Anka",
-        "FrontendFramework": "Three.js",
-        "BackendFramework": "**",
-        "Type": "Research",
-        "Tech": "WebGL",
-        "Status": "Completed",
-        "Description": "Crafted a personal A/V installation promo website, showcasing interactive features and utilizing a 3D model based on the main video component of the artwork. Employed the Three.js library to seamlessly control the 3D model directly within the browser interface, enhancing user engagement and inviting them to the exhibition.",
-        "Year": "2021",
-        "Url": "https://inhaltone.github.io/mythogram/",
-        "imageList": "mythogram/mythogram.png"
-    },
-    {
-        "Title": "Topio",
-        "Design": "Roleplay",
-        "Dev": "Bracket x Athena Research & Innovation Center",
-        "FrontendFramework": "Vue.js",
-        "BackendFramework": "Spring Boot",
-        "Type": "SaaS",
-        "Tech": "Single Page Application (SPA)",
-        "Status": "Completed",
-        "Description": "Developed the front end of a public website and dashboard interface, incorporating data visualizations using Highcharts. Utilized Vue.js with TypeScript support, adhering to object-oriented programming (OOP) code style for efficient development and maintenance.",
-        "Year": "2021",
-        "Url": "https://topio.market/",
-        "imageList": null
-    },
-    {
-        "Title": "Spaces of Faux Intimacies",
-        "Design": "Gendy",
-        "Dev": "Gendy",
-        "FrontendFramework": "Vue.js",
-        "BackendFramework": "**",
-        "Type": "Fine Arts",
-        "Tech": "Single Page Application (SPA)",
-        "Status": "Archived",
-        "Description": "Developed an archival website showcasing artists from the 'Spaces of Faux Intimacies' exhibition in Berlin. Built as a single-page application using Vue.js, with custom endpoints and API calls integrated via WordPress CMS.",
-        "Year": "2020",
-        "Url": null,
         "imageList": null
     },
     {
