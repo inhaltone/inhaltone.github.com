@@ -1,5 +1,20 @@
 [
     {
+        "Title": "Rheo.Lit",
+        "Design": "Gendy",
+        "Dev": "Gendy",
+        "FrontendFramework": "Three.js",
+        "BackendFramework": "**",
+        "Type": "Research",
+        "Tech": "Dynamic Website",
+        "Status": "Work in Progress (WIP)",
+        "Description": "Rheolit is an innovative research project that explores the intersection of rheology and artistic practice. By integrating scientific principles with creative processes. Developed a fluid simulation using Three.js.",
+        "Year": "2024",
+        "Client": "University of Antwerp",
+        "Url": "https://rheolit.com/",
+        "imageList": "rheolit/rheolit-1.png"
+    },
+    {
         "Title": "Dryland: Pavilion of Greece — La Biennale di Venezia",
         "Design": "Studio Precarity",
         "Dev": "Gendy",
@@ -10,22 +25,9 @@
         "Status": "Completed",
         "Description": "Contributed to the Dryland: Pavilion of Greece project at La Biennale di Venezia. My tasks included implementing the intersection observer pattern for scroll interactions on video players and integrating a custom JavaScript module. This module facilitated asynchronous object movement across the viewport height, dynamically adjusting based on user scrolling behavior. It offers high configurability through a simple API, enabling customization of parameters such as mouse dragging amount, easing, and positioning.",
         "Year": "2024",
+        "Client": "EMST",
         "Url": "https://pavilionofgreece2024.emst.gr/website/",
         "imageList": "dryland/dryland-mobile.png, dryland/dryland-mb.png"
-    },
-    {
-        "Title": "Tax Justice Network Podcasts",
-        "Design": "Roleplay",
-        "Dev": "Bracket",
-        "FrontendFramework": "**",
-        "BackendFramework": "**",
-        "Type": "Blog",
-        "Tech": "Dynamic Website",
-        "Status": "Completed",
-        "Description": "Developed a customized audio player using web components and vanilla JavaScript. Leveraged the observer design pattern to enable precise control of single-player instances, while seamlessly transmitting events to various UI components for enhanced functionality.",
-        "Year": "2024",
-        "Url": "https://podcasts.taxjustice.net/",
-        "imageList": "taxjustice/tax.png, taxjustice/tax-mb.png"
     },
     {
         "Title": "Social Workers Defenders",
@@ -38,8 +40,24 @@
         "Status": "Work in Progress (WIP)",
         "Description": "Managed data preprocessing and augmentation using Python and Pandas for a University of Essex research dataset. Implemented interactive data visualization on a global map using Mapbox.js. Developed the application using React.js and integrated custom endpoints with WordPress CMS for backend support.",
         "Year": "2024",
+        "Client": "University of Essex",
         "Url": "https://swhr-defenders.github.io/",
         "imageList": "swhr/swhr-1.png"
+    },
+    {
+        "Title": "Tax Justice Network Podcasts",
+        "Design": "Roleplay",
+        "Dev": "Bracket",
+        "FrontendFramework": "**",
+        "BackendFramework": "**",
+        "Type": "Blog",
+        "Tech": "Dynamic Website",
+        "Status": "Completed",
+        "Description": "Developed a customized audio player using web components and vanilla JavaScript. Leveraged the observer design pattern to enable precise control of single-player instances, while seamlessly transmitting events to various UI components for enhanced functionality.",
+        "Year": "2024",
+        "Client": "**",
+        "Url": "https://podcasts.taxjustice.net/",
+        "imageList": "taxjustice/tax.png, taxjustice/tax-mb.png"
     },
     {
         "Title": "BasedOn",
@@ -52,6 +70,7 @@
         "Status": "Work in Progress (WIP)",
         "Description": "Designed visual identity and structured information architecture for BasedOn service website. Incorporated SVG animations and crafted flow presentations using DOM elements. Developed the website using Nuxt.js, ensuring static export and SEO optimization.",
         "Year": "2024",
+        "Client": "BasedOn",
         "Url": null,
         "imageList": "basedon/basedon-mba.png"
     },
@@ -66,6 +85,7 @@
         "Status": "Completed",
         "Description": "Design and develop both the landing page and frontend of the dashboard application for MyIndex. This SaaS platform offers context-based search functionality for document retrieval. My responsibilities include crafting intuitive user interfaces, implementing responsive design principles, and ensuring seamless interaction. My aim is to enhance the overall user experience and functionality of the platform.",
         "Year": "2024",
+        "Client": "**",
         "Url": "https://insightsbridge.eu/",
         "imageList": null
     },
@@ -80,6 +100,7 @@
         "Status": "Completed",
         "Description": "Full-stack development of a custom WordPress theme utilizing vanilla JavaScript. Implemented frontend features and functionality while ensuring seamless integration with WordPress backend systems",
         "Year": "2024",
+        "Client": "**",
         "Url": "https://www.gaiasense.gr/",
         "imageList": null
     },
@@ -87,13 +108,14 @@
         "Title": "Machine Learning Vibe Captions",
         "Design": "Anka",
         "Dev": "Anka",
-        "FrontendFramework": "Pytorch",
-        "BackendFramework": "Spring Boot",
+        "FrontendFramework": "**",
+        "BackendFramework": "Pytorch x Spring Boot",
         "Type": "Research",
         "Tech": "Deep Learning",
         "Status": "Work in Progress (WIP)",
         "Description": "Developed a pivotal component for my Master's thesis project. Engineered a data scraper using Node.js and TypeScript, seamlessly integrating with a Spring Boot application for real-time data storage. Curated and processed a dataset comprising sound files and metadata, focusing on pre-processing and cleaning. Implemented a custom deep learning model using PyTorch and TorchAudio, with TensorBoard for training progress monitoring. Primarily focused on single-task binary classification for genre prediction in the initial phase.",
         "Year": "2023",
+        "Client": "**",
         "Url": "https://mlvibecaptions.github.io/docs/abstract",
         "imageList": "mlvc/mlvc.png"
     },
@@ -108,6 +130,7 @@
         "Status": "Completed",
         "Description": "Engineered custom audio players for seamless sound streaming and integration with Mixcloud service. Employed Vuex for efficient state management, ensuring precise control over single player instances. Designed UI and developed a custom CMS for radio station services, featuring image upload functionality and versatile UI module handling.",
         "Year": "2023",
+        "Client": "Onassis Stegi",
         "Url": "https://stegi.radio/",
         "imageList": "stegiradio/stegiradio.png,stegiradio/stegiradio-mba.png"
     },
@@ -122,6 +145,7 @@
         "Status": "Completed",
         "Description": "Focused on front-end development, consuming API calls from Laravel backend. Integrated plots using Highcharts.js and crafted reusable DOM intersection components, enhancing overall user interaction and data visualization.",
         "Year": "2023",
+        "Client": "**",
         "Url": "https://athens.localwatch.gr/",
         "imageList": null
     },
@@ -136,6 +160,7 @@
         "Status": "Completed",
         "Description": "Implemented parallax scroll module using vanilla JavaScript for enhanced visual effects. Created counter animations to engage users dynamically. Utilized router transitions to ensure smooth transitions between page loads, enhancing overall user experience.",
         "Year": "2023",
+        "Client": "**",
         "Url": "https://climatebook.gr/",
         "imageList": null
     },
@@ -150,6 +175,7 @@
         "Status": "Completed",
         "Description": "UI design and identity development. Executed full-stack development in WordPress. Implemented a billboard component using vanilla JS for horizontal infinite text animation.",
         "Year": "2023",
+        "Client": "**",
         "Url": "https://ioannaparaskevopoulou.com/",
         "imageList": null
     },
@@ -164,6 +190,7 @@
         "Status": "Completed",
         "Description": "Directed UI design and executed full-stack WordPress development. Implemented parallel inverted scrolling on a dual layout using vanilla JS for enhanced user experience.",
         "Year": "2023",
+        "Client": "**",
         "Url": "https://ioannavlachaki.com/",
         "imageList": null
     },
@@ -178,6 +205,7 @@
         "Status": "Completed",
         "Description": "Developed a web component for parallax scrolling on DOM elements, SVGs, and images. Utilized diverse parameters like speed, easing, and rotation for dynamic visual effects.",
         "Year": "2023",
+        "Client": "**",
         "Url": "https://skaginspires.gr/",
         "imageList": null
     },
@@ -192,6 +220,7 @@
         "Status": "Work in Progress (WIP)",
         "Description": "Developed a Vue.js-based UI kit featuring reusable components. Created dashboard layouts with extensive nesting for enhanced usability and flexibility.",
         "Year": "2023",
+        "Client": "**",
         "Url": "https://www.ebrains.eu/",
         "imageList": null
     },
@@ -206,6 +235,7 @@
         "Status": "Completed",
         "Description": "Designed and developed a portfolio website showcasing the work of artist and filmmaker Konstanza Kapsali.",
         "Year": "2023",
+        "Client": "**",
         "Url": "https://konstanzakapsali.com/",
         "imageList": null
     },
@@ -220,6 +250,7 @@
         "Status": "Work in Progress (WIP)",
         "Description": "Developed a web component using vanilla JavaScript, leveraging custom elements to optimize user experience while managing SoundCloud widgets for enhanced music playback functionality.",
         "Year": "2023",
+        "Client": "**",
         "Url": "https://inhaltone.github.io/sndcld-player/",
         "imageList": null
     },
@@ -234,6 +265,7 @@
         "Status": "Work in Progress (WIP)",
         "Description": "experimental WebGL project, where I utilize Three.js to explore fluid motion and color transitions. This project highlights my investigation into speed, surface coloring, and liquidity flow, all enhanced with subtle noise effects using post-processing shaders.",
         "Year": "2023",
+        "Client": "**",
         "Url": "https://inhaltone.github.io/blob-torus/",
         "imageList": null
     },
@@ -248,6 +280,7 @@
         "Status": "Archived",
         "Description": "Implemented the front end of Viewpal, a SaaS platform offering virtual tours worldwide, using Nuxt.js. Integrated video streaming services and developed user dashboards for seamless user interaction",
         "Year": "2022",
+        "Client": "**",
         "Url": "https://www.viewpal.com/",
         "imageList": null
     },
@@ -255,13 +288,14 @@
         "Title": "Ecodialogues",
         "Design": "Roleplay",
         "Dev": "Bracket",
-        "FrontendFramework": "Wordpress",
+        "FrontendFramework": "**",
         "BackendFramework": "**",
         "Type": "SaaS",
         "Tech": "Single Page Application (SPA)",
         "Status": "Completed",
         "Description": "Crafted a web component in vanilla JavaScript that dynamically modifies the DOM based on user selections, facilitating comment functionality inspired by the Medium platform. Users can select specific text, apply comments, reply to existing comments, and overlap selections seamlessly, without disrupting the markup structure.",
         "Year": "2022",
+        "Client": "**",
         "Url": "https://ecodialogues.gr/",
         "imageList": null
     },
@@ -276,6 +310,7 @@
         "Status": "Work in Progress (WIP)",
         "Description": "Crafted an experimental prototype, serving as both a mood board and navigation sketch, as part of research on near-death experience events. Utilized React.js to create a non-linear structured scenario inspired by the Fibonacci sequence, allowing users to navigate through geometric shapes in a 3D rendering environment.",
         "Year": "2022",
+        "Client": "**",
         "Url": "https://inhaltone.github.io/hyperlands/",
         "imageList": null
     },
@@ -290,6 +325,7 @@
         "Status": "Completed",
         "Description": "Designed the visual identity and user interface for TILT platform, an artist collective specializing in art exhibitions and research.",
         "Year": "2022",
+        "Client": "**",
         "Url": "https://tiltplatform.com/",
         "imageList": null
     },
@@ -304,6 +340,7 @@
         "Status": "Archived",
         "Description": "Developed an interactive prototype showcasing a user interface where users input terms to generate an infinite mixtape using an AI model. Implemented using Vue.js for seamless functionality.",
         "Year": "2022",
+        "Client": "**",
         "Url": null,
         "imageList": null
     },
@@ -318,6 +355,7 @@
         "Status": "Completed",
         "Description": "Crafted a personal A/V installation promo website, showcasing interactive features and utilizing a 3D model based on the main video component of the artwork. Employed the Three.js library to seamlessly control the 3D model directly within the browser interface, enhancing user engagement and inviting them to the exhibition.",
         "Year": "2021",
+        "Client": "**",
         "Url": "https://inhaltone.github.io/mythogram/",
         "imageList": "mythogram/mythogram.png"
     },
@@ -332,6 +370,7 @@
         "Status": "Archived",
         "Description": "Developed an archival website showcasing artists from the 'Spaces of Faux Intimacies' exhibition in Berlin. Built as a single-page application using Vue.js, with custom endpoints and API calls integrated via WordPress CMS.",
         "Year": "2021",
+        "Client": "**",
         "Url": null,
         "imageList": null
     },
@@ -346,6 +385,7 @@
         "Status": "Completed",
         "Description": "Developed the front end of a public website and dashboard interface, incorporating data visualizations using Highcharts. Utilized Vue.js with TypeScript support, adhering to object-oriented programming (OOP) code style for efficient development and maintenance.",
         "Year": "2021",
+        "Client": "**",
         "Url": "https://topio.market/",
         "imageList": null
     },
@@ -360,6 +400,7 @@
         "Status": "Completed",
         "Description": "Executed full-stack development for a dynamic portfolio website, incorporating interactive 3D elements using the Three.js library, enhancing user engagement through mouse-driven interactions.",
         "Year": "2021",
+        "Client": "**",
         "Url": "https://www.tzagkarakis.com/",
         "imageList": null
     },
@@ -374,6 +415,7 @@
         "Status": "Completed",
         "Description": "Crafted a dynamic static website portfolio for illustrator and architect Federica Scalisse, elevating user experience through seamless navigation and captivating illustration animations within the single-page application interface.",
         "Year": "2021",
+        "Client": "**",
         "Url": "https://federicascalise.com/",
         "imageList": null
     },
@@ -388,6 +430,7 @@
         "Status": "Completed",
         "Description": "Full-stack development of a custom WordPress theme, implementing AJAX calls to enable infinite scrolling functionality.\"",
         "Year": "2019",
+        "Client": "**",
         "Url": "https://nutu.at/",
         "imageList": null
     }

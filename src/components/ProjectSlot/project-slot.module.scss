@@ -140,3 +140,21 @@
     width: 100%;
   }
 }
+
+.linkButton {
+  background: transparent;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 3px 12px;
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  justify-self: baseline;
+  svg {
+    width: 12px;
+  }
+}

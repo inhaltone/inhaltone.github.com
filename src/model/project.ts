@@ -12,4 +12,5 @@ export interface Project {
     Year?: string;
     Status?: string;
     imageList?: string | null;
+    Client?: string;
 }

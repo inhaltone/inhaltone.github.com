@@ -57,7 +57,15 @@ export default function ProjectSlot({project}: ProjectSlotProps) {
                                 <span>developer</span>
                                 <span>{project.Dev}</span>
                             </li>
+                            <li>
+                                <span>client</span>
+                                <span>{project.Client}</span>
+                            </li>
                         </ul>
+                        <a rel={'noreferrer'} href={project.Url} target={'_blank'} className={styles.linkButton}>
+                            <span>VIEW PROJECT</span>
+                            <IconBoxArrowUpRight/>
+                        </a>
                     </div>
                     <div className={styles.projectIndexInfoCol}>
                         <div className={styles.projectIndexInfoColHeading}>
@@ -70,7 +78,8 @@ export default function ProjectSlot({project}: ProjectSlotProps) {
                     <div className={styles.projectIndexInfoCol}>
                         <div className={styles.projectIndexInfoColHeading}>
                             <p>View</p>
-                            <a aria-label={`View ${project.Title}`} href={project.Url} target={'_blank'} rel="noreferrer"><IconBoxArrowUpRight/></a>
+                            {/*<a aria-label={`View ${project.Title}`} href={project.Url} target={'_blank'}*/}
+                            {/*   rel="noreferrer"><IconBoxArrowUpRight/></a>*/}
                         </div>
                         {project.imageList ? (
                             <HyperObserver>
