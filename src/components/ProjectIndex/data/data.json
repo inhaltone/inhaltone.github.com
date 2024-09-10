@@ -10,7 +10,7 @@
         "Status": "Work in Progress (WIP)",
         "Description": "Rheolit is an innovative research project that explores the intersection of rheology and artistic practice. By integrating scientific principles with creative processes. Developed a fluid simulation using Three.js.",
         "Year": "2024",
-        "Client": "University of Antwerp",
+        "Client": "Eindhoven University of Technology",
         "Url": "https://rheolit.com/",
         "imageList": "rheolit/rheolit-1.png"
     },
@@ -41,7 +41,7 @@
         "Description": "Managed data preprocessing and augmentation using Python and Pandas for a University of Essex research dataset. Implemented interactive data visualization on a global map using Mapbox.js. Developed the application using React.js and integrated custom endpoints with WordPress CMS for backend support.",
         "Year": "2024",
         "Client": "University of Essex",
-        "Url": "https://swhr-defenders.github.io/",
+        "Url": "https://sw-riskdata.org/",
         "imageList": "swhr/swhr-1.png"
     },
     {
@@ -71,7 +71,7 @@
         "Description": "Designed visual identity and structured information architecture for BasedOn service website. Incorporated SVG animations and crafted flow presentations using DOM elements. Developed the website using Nuxt.js, ensuring static export and SEO optimization.",
         "Year": "2024",
         "Client": "BasedOn",
-        "Url": null,
+        "Url": "https://basedon.app/",
         "imageList": "basedon/basedon-mba.png"
     },
     {
